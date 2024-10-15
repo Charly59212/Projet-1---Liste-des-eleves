@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bfbfe4e1;
+    color: #333;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+/*Title*/
+h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    color: #455f7c;
+    text-align: center;
+}
+
+/*text*/
+p {
+    font-size: 1.1em;
+    color: rgb(78, 77, 77);
+}
+
+/*list*/
+ul {
+    list-style: none;
+    max-width: 300px;
+}
+
+li {
+    background: #d8e3e6;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*container*/
+
+.container,
+.container-bis {
+    margin: auto;
+}
+
+/*index*/
+.container {
+    background-color: rgb(213, 223, 220);
+    border-radius: 15px;
+    padding: 15px;
+    padding-top: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(109, 106, 106);
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 5px 15px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+/*details*/
+.container-bis {
+    width: 400px;
+}
+
+.details {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.passions {
+    display: block;
+    text-align: center;
+    font-family: "Lora", serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(85, 85, 211);
+}
+
+.container-bis ul {
+    max-width: 80%;
+    margin: 15px auto;
+    padding: 0;
+}
+
+/*Buttons*/
+.button a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button-bis a {
+    width: 150px;
+    height: 30px;
+}
+
+.button a:hover {
+    box-shadow: 0 1px 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: #45a040;
+    color: blue;
+}
+
+/* Animation for containers */
+.container,
+.container-bis {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*Media queries for smartphone*/
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .container,
+    .container-bis {
+        width: 85%;
+    }
+
+    .container-bis {
+        width: 350px;
+    }
+
+    .row {
+        height: 30px;
+    }
+
+    .text {
+        margin: 0;
+    }
+}
